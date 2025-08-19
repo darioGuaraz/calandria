@@ -74,7 +74,7 @@
     left: 0; /* Añadido left: 0 */
     width: 100%;
     height: 50vh;
-    background-color: var(--color-bg, #ffffff);
+    background-color: var(--color-primary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
