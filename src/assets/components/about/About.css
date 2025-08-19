@@ -1,0 +1,35 @@
+.about {
+  padding: 5rem 2rem;
+  background: var(--color-bg);
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.about.visible {
+  opacity: 1;
+}
+
+.about h2 {
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 1rem;
+  }
+}
