@@ -1,13 +1,19 @@
 .services {
   padding: 5rem 2rem;
-  background: #333333;
+  /*background: #333333;*/
+  background-image: url("../../img/fondobg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services h2 {
-  color: var(--color-bg);
+  color: var(--color-secondary);
   text-align: center;
+  margin-top: 10px;
   margin-bottom: 3rem;
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 210;
+  background-color: black;
 }
 
 .services-grid {
@@ -37,6 +43,9 @@
 .service-category:hover {
   transform: translateY(-5px);
   background-color: #d1d1d1;
+}
+.service-category h3:hover {
+  color: var(--color-secondary);
 }
 
 /* Asegurarse de que la transición del hover solo afecte cuando ya es visible */
