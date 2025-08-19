@@ -1,4 +1,4 @@
-# Visualent Landing Page
+# Calandria Landing Page
 
 Landing page responsive, mobile first, moderna y minimalista para Calandria .
 
