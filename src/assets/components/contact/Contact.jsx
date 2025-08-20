@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./Contact.css";
+import mailico from "../../img/mailico.png";
 
 const Contact = () => {
   const contactRef = useRef(null);
@@ -40,15 +41,23 @@ const Contact = () => {
       <h2>Contacto</h2>
       <div className="contact-content">
         <p className="contact-intro">
-          ¿Querés hacer una consulta o agendar una cita? Estamos para ayudarte.
+          ¿Querés hacer una consulta o agendar una reunión? Estamos para
+          ayudarte.
         </p>
+
         <div className="contact-links">
-          <a
-            href="mailto:contacto.calandria@gmail.com?subject=Consulta%20Calandria&body=Hola,%20vi%20su%20pagina%20web%20y%20quisiera%20mas%20informacion%20sobre%20sus%20servicios"
-            className="contact-item email"
-          >
-            📧 contacto.calandria@gmail.com
-          </a>
+          <div className="container-a-contact">
+            <a
+              href="mailto:contacto.calandria@gmail.com?subject=Consulta%20Calandria&body=Hola,%20vi%20su%20pagina%20web%20y%20quisiera%20mas%20informacion%20sobre%20sus%20servicios"
+              className="contact-item email"
+            >
+              <div className="container-img-contact">
+                <img src={mailico} alt="" />
+              </div>
+              contacto.calandria@gmail.com
+            </a>
+          </div>
+
           <a
             href="https://wa.me/541135834703?text=Hola,%20vi%20tu%20pagina%20web%20y%20quiero%20mas%20informacion%20sobre%20sus%20servicio."
             target="_blank"

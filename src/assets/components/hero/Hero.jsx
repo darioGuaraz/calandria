@@ -36,9 +36,9 @@ const Hero = () => {
       {/*<img src={logo} alt="Visualent Logo" className="hero-logo" />*/}
       <h1>Calandria</h1>
       <p>
-        Brindamos soluciones digitales a profesionales, empresas y negocios,
-        adaptadas a sus necesidades y presupuesto. Potenciamos tu marca con
-        estrategias de marketing y herramientas digitales a medida.
+        Soluciones digitales para profesionales, empresas y negocios.
+        Potenciamos tu marca con estrategias de marketing y herramientas
+        digitales a medida de tu negocio.
       </p>
       <a
         href="https://wa.me/541160352388?text=Hola,%20vi%20tu%20pagina%20web%20y%20quiero%20mas%20informacion%20sobre%20el%20servicio%20y%20productos."
