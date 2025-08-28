@@ -1,14 +1,30 @@
 .contact {
+  position: relative; /* para que el video se posicione dentro */
   padding: 5rem 2rem;
-  background-image: url("../../img/fondobg1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
+  overflow: hidden;
+}
+
+.video-contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* rellena todo el fondo */
+  z-index: -1; /* detrás del contenido */
 }
 
 .contact.visible {
   opacity: 1;
+}
+
+.contact h2,
+.contact-intro,
+.contact-links {
+  position: relative;
+  z-index: 1; /* asegura que el texto quede encima del video */
 }
 
 .contact-item {
@@ -23,10 +39,11 @@
 }
 
 .contact h2 {
-  color: var(--color-primary);
+  color: var(--color-bg) !important;
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 200;
 }
 
 .contact-content {
@@ -38,7 +55,7 @@
 .contact-intro {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: var(--color-text);
+  color: var(--color-bg);
 }
 
 .contact-links {
@@ -49,7 +66,7 @@
 
 .container-a-contact {
   align-items: center;
-  background-color: #d8d8d8;
+  background-color: #d8d8d883;
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
@@ -69,9 +86,9 @@
   font-size: 1.1rem;
   padding: 1rem;
   text-align: center;
-  transition: all 0.3s;
+  transition: all 2.3s;
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--color-bg);
 }
 
 .contact-item:hover {

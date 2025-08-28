@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./Contact.css";
 import mailico from "../../img/mailico.png";
+import contactVideo from "../../img/contact-video.mp4";
 
 const Contact = () => {
   const contactRef = useRef(null);
@@ -38,6 +39,14 @@ const Contact = () => {
 
   return (
     <section ref={contactRef} id="contact" className="contact">
+      <video
+        src={contactVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="video-contact"
+      ></video>
       <h2>Contacto</h2>
       <div className="contact-content">
         <p className="contact-intro">
