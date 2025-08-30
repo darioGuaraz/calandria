@@ -1,0 +1,48 @@
+.clients {
+  padding: 4rem 2rem;
+  background-image: url(../../img/fondo-clients.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+}
+
+.clients h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: var(--color-text, #222);
+}
+
+.clients-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.clients-logos img {
+  width: 120px;
+  height: auto;
+  margin: 1%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.08));
+
+  padding: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.clients-logos img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .clients-logos {
+    gap: 1rem;
+  }
+  .clients h2 {
+    font-size: 2rem;
+  }
+}

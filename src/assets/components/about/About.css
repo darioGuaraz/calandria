@@ -1,6 +1,9 @@
 .about {
   padding: 5rem 2rem;
-  background: var(--color-bg);
+  background-image: url(../../img/fondo-about.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
 }
@@ -27,6 +30,7 @@
   line-height: 1.6;
   color: var(--color-text);
   font-size: 1.1rem;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
