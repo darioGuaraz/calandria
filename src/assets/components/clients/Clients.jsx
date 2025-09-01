@@ -12,7 +12,14 @@ import client7 from "../../img/clients/client7.png";
 const Clients = () => {
   return (
     <section className="clients" id="clients">
-      <h2>Confiaron en nosotros</h2>
+      <div className="container-titles-clients">
+        <div className="title-ellos">
+          <h2>Ellos confiaron</h2>
+        </div>
+        <div className="title-en-nosotros">
+          <h2>en nosotros</h2>
+        </div>
+      </div>
       <div className="clients-logos">
         <img src={client1} alt="Client 1" />
         <img src={client2} alt="Client 2" />

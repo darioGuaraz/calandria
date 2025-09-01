@@ -1,17 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 .clients {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   background-image: url(../../img/fondo-clients.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: bottom right;
   text-align: center;
 }
-
-.clients h2 {
+.container-titles-clients {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+}
+.title-ellos h2 {
   font-size: 3rem;
-  font-weight: 500;
-  margin-bottom: 4rem;
-  color: var(--color-text, #222);
+  font-weight: 300;
+  color: var(--color-primary);
+}
+.title-en-nosotros h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-secondary);
 }
 
 .clients-logos {
@@ -24,7 +35,7 @@
 }
 
 .clients-logos img {
-  width: 120px;
+  width: 110px;
   height: auto;
   margin: 1%;
   object-fit: contain;
@@ -39,10 +50,26 @@
 }
 
 @media (max-width: 768px) {
+  .container-titles-clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .title-ellos h2 {
+    font-size: 3.2rem;
+
+    color: var(--color-primary);
+    margin-bottom: 0px;
+    line-height: 0.5;
+  }
+  .title-en-nosotros h2 {
+    margin-top: 0px;
+    line-height: 0.5;
+    font-size: 3.6rem;
+
+    color: var(--color-secondary);
+  }
   .clients-logos {
     gap: 1rem;
-  }
-  .clients h2 {
-    font-size: 2rem;
   }
 }
