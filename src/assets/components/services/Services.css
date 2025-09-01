@@ -52,6 +52,7 @@
   padding: 1rem;
   background: #ffffff;
   border-radius: 24px;
+  border: double black 6px;
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -75,7 +76,7 @@
   transform: translateY(-5px);
   background-color: var(--color-secondary);
   color: var(--color-bg);
-  border: double black 6px;
+  border: none;
 }
 .service-category h3:hover {
   color: var(--color-text);
