@@ -113,11 +113,30 @@
 
 @media (max-width: 600px) {
   .services {
-    padding: 3rem 1rem;
+    padding: 0;
+    padding-bottom: 60px;
+  }
+  .services-container-titles {
+    width: 100%;
   }
 
-  .services h2 {
+  .container-titles {
+    margin-left: 2%;
+  }
+  .title-especializados h2 {
     font-size: 3rem;
-    font-weight: 200;
+  }
+  .containerImgServices {
+    overflow: hidden;
+  }
+
+  .containerImgServices img {
+    width: 100px;
+  }
+
+  .service-category {
+    width: 90%;
+    margin-inline: 20px;
+    padding-inline: 1px;
   }
 }

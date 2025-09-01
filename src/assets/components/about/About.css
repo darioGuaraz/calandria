@@ -40,7 +40,6 @@
 }
 
 .about-content {
-  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -50,7 +49,6 @@
   color: var(--color-text);
   font-size: 1.2rem;
   text-align: justify;
-  max-width: 600px;
 }
 
 .montañas {
@@ -63,5 +61,35 @@
 @media (max-width: 768px) {
   .about {
     padding: 3rem 1rem;
+    background-image: url("../../img/fondo-about-mobile.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container-about-general {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 16px;
+    align-self: center;
+  }
+  .containerImgAbout {
+    display: none;
+  }
+  .container-titles-about {
+    text-align: center;
+  }
+  .title-sobre {
+    font-size: 2rem;
+  }
+  .title-nosotros {
+    font-size: 2rem;
+  }
+  .about-content p {
+    text-align: center;
+  }
+  .montañas {
+    display: none;
   }
 }

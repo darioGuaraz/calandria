@@ -67,7 +67,10 @@ const Services = () => {
           <img src={imgCardServices} alt="" />
         </div>
         <div className="service-category">
-          <h3>Marketing Digital</h3>
+          <h3>
+            Marketing <br />
+            Digital
+          </h3>
           <ul>
             <li>Gestión de redes sociales (Community Management)</li>
             <li>Publicidad digital: Google Ads & Meta Ads</li>
