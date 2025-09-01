@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./Services.css";
+import imgCardServices from "../../img/element1.png";
+import imgServiceElement from "../../img/element2.png";
 
 const Services = () => {
   const servicesRef = useRef(null);
@@ -35,10 +37,25 @@ const Services = () => {
 
   return (
     <section ref={servicesRef} id="services" className="services">
-      <h2>Servicios Especializados</h2>
+      <div className="services-container-titles">
+        <div className="container-titles">
+          <div className="title-servicios">
+            <h2>Servicios</h2>
+          </div>
+          <div className="title-especializados">
+            <h2>especializados</h2>
+          </div>
+        </div>
+        <div className="containerImgServices">
+          <img src={imgServiceElement} alt="" />
+        </div>
+      </div>
+
       <div className="services-grid">
         <div className="service-category">
-          <h3>Desarrollo Web</h3>
+          <h3>
+            Desarrollo <br></br> Web
+          </h3>
           <ul>
             <li>Landing Pages personalizadas</li>
             <li>Desarrollo de E-Commerce</li>
@@ -47,9 +64,10 @@ const Services = () => {
             <li>Soluciones digitales escalables</li>
             <li>Diseño de interfaces (UI) y experiencia de usuario (UX)</li>
           </ul>
+          <img src={imgCardServices} alt="" />
         </div>
         <div className="service-category">
-          <h3>Marketing digital</h3>
+          <h3>Marketing Digital</h3>
           <ul>
             <li>Gestión de redes sociales (Community Management)</li>
             <li>Publicidad digital: Google Ads & Meta Ads</li>
@@ -58,6 +76,7 @@ const Services = () => {
             <li>Posicionamiento SEO</li>
             <li>Branding y diseño de identidad visual</li>
           </ul>
+          <img src={imgCardServices} alt="" />
         </div>
         <div className="service-category">
           <h3>Producción Audiovisual</h3>
@@ -67,6 +86,7 @@ const Services = () => {
             <li>Locución y voice-over</li>
             <li>Composición y producción musical</li>
           </ul>
+          <img src={imgCardServices} alt="" />
         </div>
       </div>
     </section>

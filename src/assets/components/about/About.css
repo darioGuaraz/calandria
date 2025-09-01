@@ -1,23 +1,42 @@
 .about {
-  padding: 5rem 2rem;
-  background-image: url(../../img/fondo-about.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  opacity: 0;
   transition: opacity 0.8s ease-in-out;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .about.visible {
   opacity: 1;
 }
 
-.about h2 {
-  color: var(--color-primary);
-  text-align: center;
+.container-about-general {
+  /*contenedor general (calandria y textos)*/
+  display: flex;
+  margin-top: 6vh;
+}
 
-  font-size: 3.5rem;
-  font-weight: 200;
+.containerImgAbout {
+  flex: 50%;
+  margin-left: 20vh;
+}
+.containerImgAbout img {
+  width: 700px;
+}
+
+.container-text-general {
+  margin-right: 15%;
+}
+
+.container-titles-about {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0px;
+}
+.title-sobre {
+  font-size: 50px;
+}
+.title-nosotros {
+  font-size: 50px;
+  color: var(--color-secondary);
 }
 
 .about-content {
@@ -29,8 +48,16 @@
   margin-bottom: 1.5rem;
   line-height: 1.6;
   color: var(--color-text);
-  font-size: 1.1rem;
-  text-align: center;
+  font-size: 1.2rem;
+  text-align: justify;
+  max-width: 600px;
+}
+
+.montañas {
+  display: block; /* elimina el espacio de inline */
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 768px) {

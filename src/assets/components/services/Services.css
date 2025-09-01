@@ -1,20 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 .services {
-  padding: 5rem 2rem;
-  /*background: #333333;*/
-  background-image: url("../../img/services-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #000000;
+  padding-bottom: 100px;
 }
 
-.services h2 {
-  color: rgba(214, 212, 212, 0.459);
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 3rem;
-  font-size: 6rem;
-  font-weight: 100;
+.services-container-titles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerImgServices {
+  flex: 30%;
+  text-align: end;
+  padding: 0%;
+  margin-left: 0px;
+}
+.containerImgServices img {
+  width: 40%;
+  margin-top: 20px;
+}
+.container-titles {
+  flex: 70%;
+  margin-left: 18%;
+  letter-spacing: -1px; /* Reduce espacio entre letras */
+  line-height: 0.8; /* Reduce espacio entre líneas */
+}
+.title-servicios h2 {
+  color: var(--color-secondary);
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.title-especializados h2 {
+  margin-top: 0px;
+  color: var(--color-bg);
+  font-size: 5.5rem;
+  font-weight: 400;
 }
 
 .services-grid {
@@ -26,29 +48,37 @@
 }
 
 .service-category {
-  color: var(--color-bg);
-  padding: 2rem;
-  background: #d9d9d938;
+  color: var(--color-text);
+  padding: 1rem;
+  background: #ffffff;
   border-radius: 24px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   will-change: opacity, transform;
+  display: flex;
+  flex-direction: column; /* elementos apilados en columna */
+  align-items: flex-start; /* por defecto todo a la izquierda */
 }
 
 .service-category.visible {
   opacity: 1;
   transform: translateY(0);
 }
+.service-category img {
+  width: 50px;
+  align-self: flex-end;
+  margin-top: auto;
+}
 
 .service-category:hover {
   transform: translateY(-5px);
-  background-color: #d1d1d1;
-  color: var(--color-text);
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
+  border: double black 6px;
 }
 .service-category h3:hover {
-  color: var(--color-secondary);
+  color: var(--color-text);
 }
 
 /* Asegurarse de que la transición del hover solo afecte cuando ya es visible */
@@ -57,12 +87,11 @@
 }
 
 .service-category h3 {
-  text-align: center;
-  margin-inline: 0px;
-  padding: 0%;
-  margin-bottom: 3.5rem;
-  font-size: 2rem;
-  font-weight: 300;
+  padding-left: 1rem;
+  margin-top: 2px;
+  font-size: 2.5rem;
+  line-height: 1.1; /* Reduce espacio entre líneas */
+  font-weight: 700;
 }
 
 .service-category ul {
