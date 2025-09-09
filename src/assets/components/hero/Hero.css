@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url(../../img/fondo2.png);
+  background-image: url(../../img/fondo3.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -41,7 +41,7 @@
 /* Tiempos de transición personalizados */
 .hero img {
   transition-duration: 0.7s;
-  width: 40%;
+  width: 50%;
   margin-bottom: 4%;
 }
 .hero img:hover {
@@ -95,7 +95,7 @@
   .hero {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     animation: none;
   }
   .hero img {
@@ -115,6 +115,7 @@
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .hero {
     animation: none;
+    background-position: bottom;
   }
   .hero img {
     width: 90%;
