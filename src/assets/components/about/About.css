@@ -26,7 +26,7 @@
   text-align: end;
 }
 .containerImgAbout img {
-  width: 700px;
+  width: 70vh;
   height: auto;
   display: block;
 }
@@ -43,10 +43,10 @@
   gap: 10px;
 }
 .title-sobre {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .title-nosotros {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: var(--color-secondary);
 }
 .title-nosotros h2,
