@@ -5,6 +5,7 @@ import wspico from "../../img/wspicogris.png";
 import igico from "../../img/igico.png";
 import telico from "../../img/telico.jpg";
 import contactVideo from "../../img/contact-video.mp4";
+import logoHeader from "../../img/logo-letras-blanco.png";
 
 const Contact = () => {
   const contactRef = useRef(null);
@@ -57,53 +58,63 @@ const Contact = () => {
           ¿Querés hacer una consulta o agendar una reunión? Estamos para
           ayudarte.
         </p>
+        <div className="botonera-y-logo">
+          <div className="container-img-title">
+            <img
+              src={logoHeader}
+              alt="Calandria Logo"
+              className="contact-logo"
+            />
+          </div>
+          <hr class="separador" />
 
-        <div className="contact-links">
-          <div className="container-a-contact">
-            <a
-              href="mailto:contacto.calandria@gmail.com?subject=Consulta%20Calandria&body=Hola,%20vi%20su%20pagina%20web%20y%20quisiera%20mas%20informacion%20sobre%20sus%20servicios"
-              className="contact-item email"
-            >
-              <div className="container-img-contact">
-                <img src={mailico} alt="" />
-              </div>
-              contacto.calandria@gmail.com
-            </a>
-          </div>
-          <div className="container-a-contact">
-            <a
-              href="https://wa.me/541135834703?text=Hola,%20vi%20tu%20pagina%20web%20y%20quiero%20mas%20informacion%20sobre%20sus%20servicio."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-item whatsapp"
-            >
-              <div className="container-img-contact">
-                <img src={wspico} alt="" />
-              </div>
-              +54 11-3583-4703
-            </a>
-          </div>
+          <div className="contact-links">
+            <div className="container-a-contact">
+              <a
+                href="mailto:contacto.calandria@gmail.com?subject=Consulta%20Calandria&body=Hola,%20vi%20su%20pagina%20web%20y%20quisiera%20mas%20informacion%20sobre%20sus%20servicios"
+                className="contact-item email"
+              >
+                <div className="container-img-contact">
+                  <img src={mailico} alt="" />
+                </div>
+                contacto.calandria@gmail.com
+              </a>
+            </div>
+            <div className="container-a-contact">
+              <a
+                href="https://wa.me/541135834703?text=Hola,%20vi%20tu%20pagina%20web%20y%20quiero%20mas%20informacion%20sobre%20sus%20servicio."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-item whatsapp"
+              >
+                <div className="container-img-contact">
+                  <img src={wspico} alt="" />
+                </div>
+                +54 11-3583-4703
+              </a>
+            </div>
 
-          <div className="container-a-contact">
-            <a className="contact-item">
-              <div className="container-img-contact">
-                <img src={telico} alt="" />
-              </div>
-              +54 11-3583-4703
-            </a>
-          </div>
-          <div className="container-a-contact">
-            <a
-              href="https://www.instagram.com/agenciacalandria?igsh=MWp5c2N2bHFpYWZzaQ=="
-              className="contact-item instagram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="container-img-contact">
-                <img src={igico} alt="" />
-              </div>
-              @agenciacalandria
-            </a>
+            <div className="container-a-contact">
+              <a className="contact-item">
+                <div className="container-img-contact">
+                  <img src={telico} alt="" />
+                </div>
+                +54 11-3583-4703
+              </a>
+            </div>
+            <div className="container-a-contact">
+              <a
+                href="https://www.instagram.com/agenciacalandria?igsh=MWp5c2N2bHFpYWZzaQ=="
+                className="contact-item instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="container-img-contact">
+                  <img src={igico} alt="" />
+                </div>
+                @agenciacalandria
+              </a>
+            </div>
           </div>
         </div>
       </div>
