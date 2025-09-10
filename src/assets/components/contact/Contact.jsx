@@ -85,10 +85,12 @@ const Contact = () => {
           </div>
 
           <div className="container-a-contact">
-            <div className="container-img-contact">
-              <img src={telico} alt="" />
-            </div>
-            <p className="contact-item">+54 11-3583-4703</p>
+            <a className="contact-item">
+              <div className="container-img-contact">
+                <img src={telico} alt="" />
+              </div>
+              +54 11-3583-4703
+            </a>
           </div>
           <div className="container-a-contact">
             <a
