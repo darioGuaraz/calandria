@@ -1,7 +1,6 @@
 .contact {
   position: relative;
   padding: 5rem 2rem;
-
   overflow: hidden;
 }
 
@@ -29,7 +28,7 @@
 }
 
 .contact h2 {
-  color: var(--color-bg) !important;
+  color: var(--color-bg);
   text-align: center;
   margin-top: 0rem;
   margin-bottom: 2rem;
@@ -65,7 +64,7 @@
 .separador {
   border: none; /* quitamos estilo por defecto */
   border-left: 2px solid #ccc; /* línea vertical */
-  height: 32vh;
+  height: 25vh;
   margin-inline: 30px;
 }
 
