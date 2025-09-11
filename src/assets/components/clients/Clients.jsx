@@ -14,7 +14,7 @@ const Clients = () => {
     <section className="clients" id="clients">
       <div className="container-titles-clients">
         <div className="title-ellos">
-          <h2>Ellos confiaron</h2>
+          <h2>Confiaron</h2>
         </div>
         <div className="title-en-nosotros">
           <h2>en nosotros</h2>

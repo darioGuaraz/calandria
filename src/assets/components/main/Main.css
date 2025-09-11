@@ -1,0 +1,80 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../img/fondo-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main h2 {
+  text-align: center;
+  margin: 3rem;
+  font-size: 4rem;
+  font-weight: 600;
+  filter: invert(1);
+  mix-blend-mode: difference;
+}
+.mainservices {
+  margin: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: solid #b6b2b2 1px;
+  border-radius: 22px;
+  overflow: hidden;
+}
+.mainservices:nth-child(3) {
+  flex-direction: row-reverse; /*el contenedor del medio opuesto*/
+}
+
+.text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 6%;
+}
+.text-content h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+.text-content p {
+  margin-inline: 10%;
+  text-align: justify;
+}
+.img-content {
+  flex: 1;
+  text-align: center;
+  padding: 0; /* elimina padding */
+  margin: 0; /* elimina margen */
+}
+.img-content video {
+  width: 100%;
+  height: 100%;
+  display: block; /* elimina espacio extra de inline elements */
+  object-fit: cover; /* opcional: asegura que el video cubra todo el contenedor */
+  margin: 0; /* elimina margen */
+  padding: 0; /* elimina padding */
+}
+@media (max-width: 600px) {
+  .mainservices {
+    flex-direction: column;
+  }
+  .text-content p {
+    margin-inline: 4%;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .mainservices {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .mainservices:nth-child(3) {
+    flex-direction: column;
+  }
+}

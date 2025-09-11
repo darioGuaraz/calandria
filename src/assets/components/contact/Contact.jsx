@@ -54,10 +54,7 @@ const Contact = () => {
 
       <div className="contact-content">
         <h2>Contacto</h2>
-        <p className="contact-intro">
-          ¿Querés hacer una consulta o agendar una reunión? Estamos para
-          ayudarte.
-        </p>
+
         <div className="botonera-y-logo">
           <div className="container-img-title">
             <img

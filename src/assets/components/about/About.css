@@ -27,7 +27,7 @@
   text-align: end;
 }
 .containerImgAbout img {
-  width: 70vh;
+  width: 60vh;
   height: auto;
   display: block;
 }
@@ -67,7 +67,7 @@
   max-width: 100%; /* que nunca se pase del contenedor */
   line-height: 1.6;
   color: var(--color-text);
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: justify;
 }
 
