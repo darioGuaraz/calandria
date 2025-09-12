@@ -15,7 +15,7 @@
 }
 @keyframes zoomEffect {
   from {
-    background-size: 110%;
+    background-size: 105%;
   }
   to {
     background-size: 100%; /* hace zoom out */

@@ -44,6 +44,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   max-width: 1200px;
+  height: 60vh;
   margin: 0 auto;
 }
 
@@ -124,6 +125,11 @@
   .container-titles {
     margin-left: 2%;
   }
+  .services-grid {
+    height: auto;
+    flex-direction: column;
+    padding: 1%;
+  }
   .title-especializados h2 {
     font-size: 3rem;
   }
@@ -139,5 +145,13 @@
     width: 90%;
     margin-inline: 20px;
     padding-inline: 1px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .services-grid {
+    height: auto;
+    padding: 2%;
+    gap: 2%;
   }
 }

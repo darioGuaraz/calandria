@@ -85,6 +85,12 @@
   .mainservices:nth-of-type(4) {
     flex-direction: column;
   }
+  .text-content H3 {
+    margin-top: 8%;
+    margin-bottom: 4%;
+    width: 100%;
+  }
+
   .text-content p {
     margin: 0;
     margin-inline: 2px;
@@ -100,5 +106,8 @@
   .mainservices:nth-child(3),
   .mainservices:nth-of-type(4) {
     flex-direction: column;
+  }
+  .text-content H3 {
+    margin-top: 8%;
   }
 }
