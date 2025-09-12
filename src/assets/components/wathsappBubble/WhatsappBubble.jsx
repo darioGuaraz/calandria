@@ -1,7 +1,7 @@
 // WhatsAppBubble.jsx
 import React from "react";
 import logoWspFlotante from "../../img/wspico.png";
-import "./WhatsAppBubble.css";
+import "./WhatsappBubble.css";
 
 const WhatsAppBubble = () => (
   <a
