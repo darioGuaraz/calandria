@@ -27,11 +27,11 @@
 /* Tiempos de transición personalizados */
 .header-logo {
   transition-duration: 0.7s;
-  width: 74%;
-  margin-bottom: 0;
+  width: 80%;
+  margin-bottom: 30px;
   transition: 1s;
   mix-blend-mode: difference;
-  animation: blink 0.4s;
+  animation: blink 0.5s;
   animation-delay: 4s;
 }
 @keyframes blink {
@@ -53,13 +53,8 @@
 }
 
 .container-text-button {
-  display: flex;
   width: 100%;
   align-items: center;
-  gap: 10%;
-}
-.container-text-button h1 {
-  flex: 3;
 }
 .header h1 {
   margin-left: 5%;
@@ -73,32 +68,49 @@
   letter-spacing: -1px; /* Reduce espacio entre letras */
   line-height: 0.9; /* Reduce espacio entre líneas */
 }
-.container-text-button a {
-  flex: 1;
-}
 
 @media (max-width: 600px) {
   .header {
+    background-image: url(../../img/fondoHeaderMobile.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: left;
     animation: none;
+    justify-content: center;
+    gap: 2px;
+    height: 80vh;
   }
+
   .header img {
-    width: 90%;
+    width: 98%;
+    margin-top: 20px;
     margin-bottom: 20%;
   }
   .header h1 {
-    font-size: 1.2rem;
+    font-size: 3rem;
+    text-align: left;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .header {
+    background-image: url(../../img/fondoHeaderMobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
     animation: none;
-    background-position: bottom;
+    justify-content: center;
+    gap: 2px;
+    height: 80vh;
   }
-  .header-logo img {
-    width: 90%;
+
+  .header img {
+    width: 98%;
+    margin-top: 20px;
+    margin-bottom: 8%;
+  }
+  .header h1 {
+    font-size: 4rem;
+    text-align: left;
   }
 }
