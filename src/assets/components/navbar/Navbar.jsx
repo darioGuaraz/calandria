@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="#hero" className="navbar-logo" onClick={closeMenu}>
+        <a href="#header" className="navbar-logo" onClick={closeMenu}>
           <img src={logo} alt="Calandria Logo" className="navbar-logo" />
         </a>
 

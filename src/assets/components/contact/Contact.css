@@ -87,7 +87,6 @@
 .container-a-contact:hover {
   border-color: var(--color-secondary);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(4, 124, 139, 0.1);
 }
 
 .container-img-contact {

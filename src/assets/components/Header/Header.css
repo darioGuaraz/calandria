@@ -1,11 +1,11 @@
 .header {
-  height: 100vh;
+  height: 94vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-end;
   text-align: center;
-  background-image: url(../../img/fondo3.png);
+  background-image: url(../../img/fondo2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -24,71 +24,57 @@
 
 /* Animaciones para los elementos del header */
 
-.header p,
-.header .header-cta {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  will-change: opacity, transform;
-}
-
-.header p.visible,
-.header .header-cta.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* Tiempos de transición personalizados */
-.header img {
+.header-logo {
   transition-duration: 0.7s;
-  width: 50%;
-  margin-bottom: 4%;
+  width: 74%;
+  margin-bottom: 0;
   transition: 1s;
-  filter: drop-shadow(5px 5px 10px black);
+  mix-blend-mode: difference;
+  animation: blink 0.4s;
+  animation-delay: 4s;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.header .header-cta {
-  transition-duration: 0.9s;
+.container-text-button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10%;
 }
-/*
-.header img {
-  display: block;
-  width: 15%;
-  background-color: rgba(255, 255, 255, 0.13);
-  padding: 20px;
-  border: 2px rgba(255, 255, 255, 0) solid;
-  box-shadow: #000 2px 2px 2px 2px;
-}*/
-
+.container-text-button h1 {
+  flex: 3;
+}
 .header h1 {
-  font-size: 1.6rem;
+  margin-left: 5%;
+  margin-top: 8%;
+  text-align: justify;
+  font-size: 4rem;
   color: rgb(255, 255, 255);
-  text-shadow: #000 1px 1px 1px;
-  font-weight: 300;
-  margin: 0 auto 2rem;
+  font-weight: 900;
   transition-duration: 0.9s;
+  mix-blend-mode: difference;
+  letter-spacing: -1px; /* Reduce espacio entre letras */
+  line-height: 0.9; /* Reduce espacio entre líneas */
 }
-
-.header-cta {
-  background: var(--color-text, #000);
-  color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 1rem;
-  box-shadow: 0 4px 16px #0002;
-  transition: background 0.3s, transform 0.3s;
-  margin-top: 1rem;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.header-cta:hover {
-  transform: translateY(-2px);
-  background-color: var(--color-bg);
-  color: #000;
-  transition: 0.6s;
-  box-shadow: 0 6px 20px #0003;
+.container-text-button a {
+  flex: 1;
 }
 
 @media (max-width: 600px) {
@@ -105,11 +91,6 @@
   .header h1 {
     font-size: 1.2rem;
   }
-
-  .header-cta {
-    font-size: 0.9rem;
-    padding: 0.8rem 1.5rem;
-  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -117,7 +98,7 @@
     animation: none;
     background-position: bottom;
   }
-  .header img {
+  .header-logo img {
     width: 90%;
   }
 }

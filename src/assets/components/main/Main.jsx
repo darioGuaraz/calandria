@@ -4,6 +4,7 @@ import "./Main.css";
 import videoDev from "../../img/videoDev.mp4";
 import videoMkt from "../../img/videoMarketing.mp4";
 import videoMultimedia from "../../img/videoMultimedia.mp4";
+import videoIntegral from "../../img/videoIntegral.mp4";
 
 const Main = () => {
   return (
@@ -72,6 +73,28 @@ const Main = () => {
         <div className="img-content">
           <video
             src={videoMultimedia}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="videoDev"
+          />
+        </div>
+      </div>
+      <div className="mainservices">
+        <div className="text-content">
+          <h3>Planes a Medida</h3>
+          <p>
+            Nos enfocamos en entender tus necesidades específicas para diseñar
+            estrategias a medida que conecten con tu audiencia y generen
+            resultados reales. Contactanos para recibir asesoramiento
+            personalizado y conocer nuestras opciones de pago flexibles pensadas
+            para facilitar tu inversión en tecnología y comunicación.
+          </p>
+        </div>
+        <div className="img-content">
+          <video
+            src={videoIntegral}
             autoPlay
             loop
             muted
