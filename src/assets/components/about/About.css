@@ -4,6 +4,9 @@
   transition: opacity 0.8s ease-in-out;
   margin: 0 auto;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
 }
 
 .about.visible {
@@ -15,10 +18,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 5vw;
   width: 100vh;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 20vh;
   padding: 0 1rem;
 }
 
@@ -43,13 +46,11 @@
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
+  font-size: 3.5rem;
   gap: 10px;
 }
-.title-sobre {
-  font-size: 3.5rem;
-}
+
 .title-nosotros {
-  font-size: 3.5rem;
   color: var(--color-secondary);
 }
 .title-nosotros h2,
@@ -93,10 +94,10 @@
     flex-direction: column;
     flex-direction: column-reverse;
     align-items: center;
-    text-align: center;
-    margin: 0; /* elimina margen extra */
     align-self: center;
+    gap: 10vh;
     padding: 0; /* opcional: elimina padding extra */
+    margin-bottom: 10vh;
   }
   .containerImgAbout,
   .containerImgAbout img {
@@ -107,15 +108,15 @@
 
   .container-titles-about {
     text-align: center;
+    font-size: 2.2rem;
   }
-  .title-sobre {
-    font-size: 2rem;
+
+  .container-titles-about h2 {
+    font-weight: 900;
   }
-  .title-nosotros {
-    font-size: 2rem;
-  }
+
   .about-content p {
-    text-align: center;
+    text-align: justify;
   }
   .montañas {
     display: none;
@@ -123,13 +124,16 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    gap: 10vh;
+  }
   .container-about-general {
     width: 100%;
+    gap: 10vh;
     flex-direction: column;
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
-    margin: 0; /* elimina margen extra */
     align-self: center;
     padding: 0; /* opcional: elimina padding extra */
   }
@@ -139,7 +143,18 @@
     margin-top: 0;
     margin-bottom: 20px;
   }
+  .container-text-general {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+  .container-titles-about,
+  .container-titles-about h2 {
+    width: 100%;
+    font-size: 6.3rem;
+  }
   .about-content p {
     width: 90%;
+    font-size: 1.2rem;
   }
 }

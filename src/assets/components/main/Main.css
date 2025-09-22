@@ -30,15 +30,6 @@
 .mainservices:nth-of-type(4) {
   flex-direction: row-reverse; /*el contenedor del medio opuesto*/
 }
-/*.mainservices:last-child {
-  color: aliceblue;
-  background-color: black;
-  border: none;
-  border-radius: 0px;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-}*/
 
 .text-content {
   flex: 1;
@@ -62,13 +53,15 @@
 }
 .img-content {
   flex: 1;
+  height: 100%;
   text-align: center;
   padding: 0; /* elimina padding */
   margin: 0; /* elimina margen */
 }
 .img-content video {
   width: 100%;
-  height: 100%;
+  height: 48vh;
+
   display: block; /* elimina espacio extra de inline elements */
   object-fit: cover; /* opcional: asegura que el video cubra todo el contenedor */
   margin: 0; /* elimina margen */
