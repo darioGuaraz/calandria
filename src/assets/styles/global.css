@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 @import "./variables.css";
-
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Barriecito&family=Barrio&family=Bebas+Neue&family=Bitcount+Prop+Single:wght@100..900&family=Cinzel:wght@400..900&family=Handjet:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair:ital,opsz,wdth,wght@0,5..1200,112.5,300..900;1,5..1200,112.5,300..900&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -9,4 +9,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-main);
+}
+
+.main h2 {
+  font-family: barrio;
 }

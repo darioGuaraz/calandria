@@ -129,6 +129,9 @@
     height: auto;
     flex-direction: column;
     padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .title-especializados h2 {
     font-size: 3rem;
@@ -143,12 +146,22 @@
 
   .service-category {
     width: 90%;
-    margin-inline: 20px;
+    margin-inline: 1px;
     padding-inline: 1px;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+  .services-container-titles {
+    margin-left: 0;
+  }
+  .container-titles {
+    margin-left: 2%;
+  }
+  .containerImgServices img {
+    width: 18vw;
+  }
+
   .services-grid {
     height: auto;
     padding: 2%;

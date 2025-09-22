@@ -7,16 +7,28 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  gap: 10vh;
 }
 .main h2 {
+  margin-top: 15vh;
   text-align: center;
-  margin-bottom: 4%;
   font-size: 4.5rem;
   font-weight: 500;
   filter: invert(1);
   mix-blend-mode: difference;
+  line-height: 0.8; /* Reduce espacio entre líneas */
+}
+.mainservices-general {
+  width: 90%;
+  margin: 2rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
 }
 .mainservices {
+  width: 100%;
   margin: 2rem;
   flex: 1;
   display: flex;
@@ -26,7 +38,7 @@
   border-radius: 22px;
   overflow: hidden;
 }
-.mainservices:nth-child(3),
+.mainservices:nth-child(2),
 .mainservices:nth-of-type(4) {
   flex-direction: row-reverse; /*el contenedor del medio opuesto*/
 }
@@ -57,26 +69,35 @@
   text-align: center;
   padding: 0; /* elimina padding */
   margin: 0; /* elimina margen */
+  overflow: hidden;
 }
 .img-content video {
   width: 100%;
-  height: 48vh;
+  height: 50vh;
 
   display: block; /* elimina espacio extra de inline elements */
   object-fit: cover; /* opcional: asegura que el video cubra todo el contenedor */
+  object-position: top; /* similar a background-position: center */
   margin: 0; /* elimina margen */
   padding: 0; /* elimina padding */
 }
 @media (max-width: 600px) {
+  .mainservices-general {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    gap: 1vh;
+  }
   .mainservices {
     flex-direction: column;
-
-    width: 96%;
-    margin-bottom: 20px;
+    width: 92%;
   }
-  .mainservices:nth-child(3),
+  .mainservices:nth-child(2),
   .mainservices:nth-of-type(4) {
     flex-direction: column;
+  }
+  .img-content {
+    max-height: 35vh;
   }
   .text-content H3 {
     margin-top: 8%;
@@ -94,12 +115,18 @@
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .mainservices {
     flex-direction: column;
-    gap: 40px;
+    gap: 5vh;
+    width: 90%;
   }
-  .mainservices:nth-child(3),
+  .mainservices:nth-child(2),
   .mainservices:nth-of-type(4) {
     flex-direction: column;
   }
+
+  .img-content {
+    max-height: 35vh;
+  }
+
   .text-content H3 {
     margin-top: 8%;
   }
